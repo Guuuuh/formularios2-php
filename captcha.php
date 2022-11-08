@@ -2,7 +2,7 @@
 
 session_start();
 
-header('Content-Type: image/jpeg');
+//header('Content-Type: image/jpeg');
 
 $image = imagecreate(200, 100);
 

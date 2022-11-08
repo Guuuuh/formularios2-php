@@ -14,7 +14,7 @@ $_SESSION['csrf_token'] = sha1(rand(1, 20000));
 </head>
 <body>
     <form action="send.php" method="post">
-        <input type="hidden" name="_csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
+        <input type="hidden" name="_csrf_token" value="<= $_SESSION['csrf_token']; ?>">
         <input name="nome" type="text" placeholder="Nome"><br>
         <input name="url" type="text" placeholder="Seu site"><br>
         <input name="email" type="email" placeholder="Email"><br>

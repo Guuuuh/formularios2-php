@@ -12,15 +12,15 @@ $json = json_decode($json, true);
 var_dump('--JSON--', $json);
 
 if (is_null($nome)) {
-    $nome = $json['nome'] ?? null;
+    $nome = $json['nome'] ? $json['nome'] : null;
 }
 
 if (is_null($email)) {
-    $email = $json['email'] ?? null;
+    $email = $json['email'] ? $json['email'] : null;
 }
 
 if (is_null($descricao)) {
-    $descricao = $json['descricao'] ?? null;
+    $descricao = $json['descricao'] ? $json['descricao'] : null;
 }
 
 var_dump('--FINAL--', $nome, $email, $descricao);
